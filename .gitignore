@@ -1,0 +1,6 @@
+ClassFiles/
+.venv/
+.idea/
+__pycache__/
+*.toml
+*.lock
