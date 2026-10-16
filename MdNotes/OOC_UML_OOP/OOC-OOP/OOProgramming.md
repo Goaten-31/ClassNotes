@@ -15,6 +15,12 @@ It is possible to overload constructors to give out default values for an object
 These determine the accessibility to a selection of attributes and methods within a class, these often help with protecting said attributes and methods to ensure data integrity.
 They often help with Inheritance and offer help implement Encapsulation.
 
+## Getters and Setters:
+
+Getters and Setters are methods within a class;\
+*Getters* return the value of a specified attribute\
+*Setters* sets the value of a specified attribute
+
 # Implementations:
 
 ## Constructors:
@@ -141,5 +147,49 @@ class MyClass:
 		print("im an object")
 		
 Obj1 = MyClass(1)
+
+```
+
+## Implementation of Getters and Setters in C++:
+```C++
+
+class MyClass{
+	
+	private:
+		
+		void privateMethod(){
+			std::cout << "private members = inaccessible";
+		}
+		
+	protected:
+		char symb;
+		
+		void protectedMethod(){
+			std::cout << "Protected members = inhereted"
+		}
+	
+	public:
+		int num;
+		bool is_true;
+
+		void setNum(int value) { num = value; }
+
+		int getNum() const { return num; }
+		
+		void display(){
+			std::cout << "im an object";
+		}
+};
+
+int main(){
+	
+	MyClass Obj1;
+	
+	Obj1.setNum(1);
+	Obj1.is_true = true;
+
+	
+	return 0;
+}
 
 ```
