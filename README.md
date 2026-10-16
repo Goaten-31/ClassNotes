@@ -1,1 +1,1 @@
-# This repo is just my notes, for my classes... to share with friends... and to have a backup of... yeah :D
+# This repo consists of my class notes and assignments, it serves as a backup ass well as a way to access my notes from anywhere

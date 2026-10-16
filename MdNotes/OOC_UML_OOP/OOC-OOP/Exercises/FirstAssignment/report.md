@@ -1,5 +1,6 @@
 # Assignment 1 Report:
 - ## Exercise 1:
+This exercise aims to show basic user input
   - Code:
   ```C++
   #include <iostream>
@@ -27,6 +28,7 @@
   ```
 
 - ## Exercise 2:
+This exercise shows how to use user input in arithmetic operations
   - Code:
   ```C++
     #include <iostream>
@@ -54,6 +56,7 @@
   ```
 
 - ## Exercise 3:
+This exercise shows off the correct way to handle string input
   - Code:
   ```C++
       #include <iostream>
@@ -76,6 +79,7 @@
   Welcome, Ada Wong
   ```
 - ## Exercise 4 - 6:
+This exercise serves as an introduction to classes in c++; attributes, methods, getters, setters, constructors and destructors
   - Code:
   ```C++
     #include <iostream>
@@ -117,6 +121,7 @@
   Goodbye!Goodbye!
   ```
 - ## Exercise 5:
+This exercise helps to show how each object is its own unique instance of a class
   - Code:
   ```C++
     #include <iostream>
