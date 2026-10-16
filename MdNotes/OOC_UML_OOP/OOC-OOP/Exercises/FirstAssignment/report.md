@@ -1,6 +1,8 @@
 # Assignment 1 Report:
 - ## Exercise 1:
-This exercise aims to show basic user input
+This exercise aims to show basic user input\
+we use `std::cout` to print out data and `std::cin` to take in data
+
   - Code:
   ```C++
   #include <iostream>
@@ -11,7 +13,7 @@ This exercise aims to show basic user input
       int age;
       
       std::cout << "Enter your name: ";
-      std::getline(std::cin, name);
+      std::cin >> name;
   
       std::cout << "Enter your age: ";
       std::cin >> age;
@@ -28,7 +30,7 @@ This exercise aims to show basic user input
   ```
 
 - ## Exercise 2:
-This exercise shows how to use user input in arithmetic operations
+This exercise shows how to use user input in arithmetic operations; user input is similar to any other variable
   - Code:
   ```C++
     #include <iostream>
@@ -56,7 +58,10 @@ This exercise shows how to use user input in arithmetic operations
   ```
 
 - ## Exercise 3:
-This exercise shows off the correct way to handle string input
+This exercise shows off the correct way to handle string input\
+Using `std::getline`, by defining the input stream as `std::cin`, we get the user input\
+Unlike `std::cin`, `std::getline` doesn't remove whitespace, so its better for string input
+
   - Code:
   ```C++
       #include <iostream>
@@ -79,7 +84,13 @@ This exercise shows off the correct way to handle string input
   Welcome, Ada Wong
   ```
 - ## Exercise 4 - 6:
-This exercise serves as an introduction to classes in c++; attributes, methods, getters, setters, constructors and destructors
+This exercise serves as an introduction to classes in c++; attributes, methods, getters, setters, constructors and destructors\
+attributes are the variables contained within a class\
+``methods`` are the functions found within a class\
+``getters`` return the value of a specified attribute\
+``setters`` set the value of a specified attribute, allowing for the addition of constraints\
+``constructors`` allow for the creation of objects from a class\
+``destructors`` allow for the removal of objects after the program ends
   - Code:
   ```C++
     #include <iostream>
@@ -121,7 +132,9 @@ This exercise serves as an introduction to classes in c++; attributes, methods, 
   Goodbye!Goodbye!
   ```
 - ## Exercise 5:
-This exercise helps to show how each object is its own unique instance of a class
+This exercise helps to show how each object is its own unique instance of a class\
+By creating two separete objects from the same class, then calling the class method on one of the objects\
+We see how only the object which we invoked the method from has its data altered, while the other remains intact
   - Code:
   ```C++
     #include <iostream>
