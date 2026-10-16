@@ -4,3 +4,4 @@ ClassFiles/
 __pycache__/
 *.toml
 *.lock
+*.exe
