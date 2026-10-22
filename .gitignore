@@ -2,7 +2,6 @@ ClassFiles/
 .venv/
 .idea/
 __pycache__/
-exNotes/
 bins/
 *.toml
 *.lock
