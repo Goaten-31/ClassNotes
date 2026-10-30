@@ -7,6 +7,7 @@ Students should be able to access the attendance sheet related to them and be ab
 The administration is responsible for approving actions done by either professors or students
 
 # Scope of work:
+
 This system will be used by teachers, students and administration to track attendance.
 
 
@@ -17,5 +18,11 @@ The system should take login data to determine wether the user is a student or a
 Professors having the ability to manipulate the attendance data.
 Students being able to view and appeal their own attendance.
 Administration being responsible for the verification of the actions done by both actors.
+
+## Key roles:
+- Teachers: Primary Actor, records and edits attendance
+- Students: Primary Actor, views and appeals their absences.
+- Administration: Secondary Actor, confirms attendances.
+- Authentication System: Secondary Actor
 
 ![Use-case diagram](StudentAttSys.webp)

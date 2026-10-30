@@ -7,7 +7,7 @@
 
 ## 2. Scope of work
 
-The user base are individuals with access to bank accounts or to cardless operations
+The user base are individuals with access to bank accounts or to card-less operations.
 
 ## 3. Functional Requirements:
 
