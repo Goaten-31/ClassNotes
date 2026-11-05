@@ -19,4 +19,4 @@ The customer should be allowed to browse all the products that the e-shop has, a
 - Database: Secondary Actor, it updates the stock on current products.
 - Customer Support: Secondary Actor, it provides assistance for customers in case they're having issues with their purchase.
 
-![Diagram: ](EcomSys.webp)
+![Diagram: ](EcomUseCase.png)

@@ -21,4 +21,4 @@ Doctors will be able to check with the receptionists for patient records, and gi
 - Patients: Primary Actor.
 - Receptionist: Primary & Secondary Actor.
 
-![Diagram](DocApp.webp)
+![Diagram](DocAppUseCase.png)

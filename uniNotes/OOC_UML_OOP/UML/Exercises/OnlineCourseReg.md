@@ -19,4 +19,4 @@ Academic staff will mainly handle the tracking of student and professor data, as
 - Academic Staff: Secondary Actor, they'll be able to manage the funds related to the system
 - Authentication System: Secondary Actor
 
-![Diagram](StudentCourseEnrollment.webp)
+![Diagram](EnrollmentUseCase.png)
