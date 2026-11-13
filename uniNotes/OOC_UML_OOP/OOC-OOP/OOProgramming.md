@@ -15,6 +15,8 @@ It is possible to overload constructors to give out default values for an object
 These determine the accessibility to a selection of attributes and methods within a class, these often help with protecting said attributes and methods to ensure data integrity.
 They often help with Inheritance and offer help implement Encapsulation.
 
+**Note that in the greatest majority of cases, attributes must either be protected or private, otherwise encapsulation won't be correctly implemented**
+
 ## Getters and Setters:
 
 Getters and Setters are methods within a class;\
@@ -41,14 +43,12 @@ class MyClass{
 			std::cout << "im an object";
 		}
 		
-		MyClass(num, is_true){
-			num = x;
-			is_true = y;
+		MyClass(int num_val, bool is_true_val){
+			num = num_val;
+			is_true = is_true_val;
 		}
 		
-		~MyClass(){
-		
-		}
+		~MyClass();
 };
 
 int main(){
@@ -165,7 +165,7 @@ class MyClass{
 		char symb;
 		
 		void protectedMethod(){
-			std::cout << "Protected members = inhereted"
+			std::cout << "Protected members = inherited"
 		}
 	
 	public:

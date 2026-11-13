@@ -45,7 +45,7 @@ class MyClass{
 			std::cout << "im an object";
 		}
 		
-		MyClass(num, is_true){
+		MyClass(int x, bool y){
 			num = x;
 			is_true = y;
 		}
@@ -81,7 +81,7 @@ Obj1 = MyClass(1, True)
 ```C++
 class ParentClass {
 	
-	public:
+	protected: //it is best practice to use the protected access specifier when creating a parent class
 		int num;
 		bool is_true;
 		
@@ -107,5 +107,3 @@ class ChildClass(ParentClass):
 		super.__init__(num, is_true)
 		self.symbol = symbol
 ```
-
-## 
