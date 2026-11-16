@@ -1,15 +1,15 @@
 ## General Definitions and Examples
 
-### Automatic Refrence Counting
+### Automatic Reference Counting
 Automatic Reference Counting implements automatic memory management, freeing the programmer from the need to explicitly insert retains and releases. It does not provide a cycle collector; users must explicitly manage the lifetime of their objects, breaking cycles manually or with weak or unsafe references
 
 ### Garbage Collector
 A Garbage Collector removes the need for explicitly managing the lifetime of objects, breaking cycles manually or with weak or unsafe references, by handling these tasks on its own
 
-### Primitive types in python are immutable, refrence types are mutable:
+### Primitive types in python are immutable, reference types are mutable:
 
 Primitive types include: `int, bool, str...`\
-Refrence types include: `list, dict, set...`
+Reference types include: `list, dict, set...`
 
 _**Example:**_
 
@@ -55,7 +55,7 @@ for i, e in enumerate(names):
     print(i, e)
 ```
 
-Note that: i and e are abitrary names, you can name them however you want, the one defined first will be the index and the one after the value
+Note that: i and e are arbitrary names, you can name them however you want, the one defined first will be the index and the one after the value
 
 ### zip function:
 
