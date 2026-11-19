@@ -86,4 +86,4 @@ They allow developers to visualize and plan how different objects will relate an
       - **Aggregation:** It is a "whole part" relationship where a class is a composed of one or more classes (parts). The part **can** exist independently of the whole.
       - **Composition:** It is a "whole part" relationship where a class is a composed of one or more classes (parts). The part **can't** exist independently of the whole.
   
-![Diagram: ](ClassDiagram.png) 
+![Diagram: ](ClassDiagram.png)

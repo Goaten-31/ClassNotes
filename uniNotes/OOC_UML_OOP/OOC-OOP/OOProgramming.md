@@ -193,3 +193,127 @@ int main(){
 }
 
 ```
+
+## A full implementation of all the concepts we touched on in these notes
+
+````C++
+#include <iostream>
+#include <string>
+
+enum status {
+    FUNCTIONAL,
+    IN_USE,
+    UNAVAILABLE,
+    UNDEFINED
+};
+
+typedef std::string string;
+
+class Vehicle{
+    private:
+        string id;
+        string serial_code;
+
+    protected:
+        string brand;
+        string name;
+        status is_functional;
+        int speed;
+        
+    public:
+
+        void setID(string id) { this -> id = id; }
+        void setBrand(string brand) { this -> brand = brand; }
+        void setName(string name) { this -> name = name; }
+        void setFunctionalityStatus(status status) { is_functional = status; }
+        void setSpeed(int speed) { 
+            if (speed > 0) {
+                this -> speed = speed;
+            }
+            
+            if (this -> speed < 0) {
+                this -> speed = 0; 
+            }
+        } 
+        void setSerial(string name){ this -> serial_code = name + std::to_string(rand());}
+        
+        string getBrand() const { return brand; } 
+        string getName() const { return name; }
+        string getFunctionality() const { 
+            switch (is_functional) {
+                case 0:
+                    return "Functional";
+                case 1:
+                    return "In Use";
+                case 2:
+                    return "Unavailable";
+                case 3:
+                    return "Undefined";
+            }
+        }
+        int getSpeed() const { return speed; } 
+        string getSerial() const { return serial_code;}
+
+        Vehicle(){
+            brand = "N/A";
+            name = "N/A";
+            is_functional = UNDEFINED;
+            speed = 0;
+            serial_code = "N/A";
+        }
+
+        Vehicle(string brand, string name){
+            this -> brand = brand;
+            this -> name = name;
+            is_functional = UNDEFINED;
+            speed = 0;
+            serial_code = "N/A";
+        }
+
+        void displayInfo(){ std::cout << "Brand: " + getBrand() << std::endl 
+                            << "Name: " + getName() << std::endl << 
+                            "Functional: " + getFunctionality() << std::endl 
+                            << "Speed: " + std::to_string(getSpeed()) << std::endl
+                            << "Serial: " + getSerial() << std::endl; }
+    
+};
+
+class Car : Vehicle {
+    private:
+        string vehicle_type;
+
+    public:
+
+        void setType() { vehicle_type = "Car"; }
+        string getType() const { return vehicle_type; }
+        
+        Car(){
+            Vehicle();
+            setType();
+        }
+        
+        void displayInfo(){ std::cout << "Brand: " + getBrand() << std::endl 
+                            << "Name: " + getName() << std::endl << 
+                            "Functional: " + getFunctionality() << std::endl 
+                            << "Speed: " + std::to_string(getSpeed()) << std::endl
+                            << "Serial: " + getSerial() << std::endl
+                            << "Type: " + getType() << std::endl; }
+};
+
+int main(){
+
+    Vehicle car;
+    Vehicle other_car("Kia", "K5");
+    Car true_car;
+    
+    car.setBrand("Volvo");
+    car.setSpeed(1);
+    car.setSerial("Volvo");
+
+    car.displayInfo();
+    other_car.displayInfo();
+    true_car.displayInfo();
+    
+    return 0;
+}
+```

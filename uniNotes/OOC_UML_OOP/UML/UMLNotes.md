@@ -10,7 +10,7 @@
 
 ## Unified Modeling Language
 
-UML is a language for models, with technical and graphical specifications, and graphic notations to visualise models.
+UML is a language for models, with technical and graphical specifications, and graphic notations to visualize models.
 
 UML is a graphical language for visualizing, specifying, constructing, and documenting the artifacts of a software-intensive system.
 
