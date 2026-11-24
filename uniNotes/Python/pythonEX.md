@@ -50,3 +50,14 @@ print(f"numbers given: {x}, {y}")
 for i, e in enumerate(operations):
     print('operation ' + operations[i] + ' ' + results[i])
 ```
+
+## Flipping a dictionnary, with the original keys having multiple values:
+```python
+bleh = {"A": 1, "B": 2, "C": 3, "D": 1, "E": 2}
+new_bleh = {}
+for k, v in bleh.items():
+    if v not in new_bleh:
+        new_bleh[v] = [k]
+    else:
+        new_bleh[v].append(k)
+```
