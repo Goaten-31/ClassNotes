@@ -13,12 +13,12 @@ void addFiveByRef(int& x){
 int main(){
     int x = 5;
     
-    std::cout << x << std::endl;
+    std::cout << "Before addFiveByValue: "<< x << std::endl;
     addFiveByValue(x);
     
-    std::cout << x << std::endl;
+    std::cout << "After addFiveByValue and Before addFiveByRef: " << x << std::endl;
 
     addFiveByRef(x);
-    std::cout << x << std::endl;
+    std::cout << "After addFiveByRef: "<< x << std::endl;
     return 0;
 }
