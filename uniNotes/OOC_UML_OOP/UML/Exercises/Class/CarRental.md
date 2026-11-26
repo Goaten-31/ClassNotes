@@ -16,9 +16,6 @@ Target users are vehicle rental companies, their customers and employees.
 - Check vehicles before and after rental; update availability at handover and return.
 - Employees register vehicles, update conditions, manage customers and process payments.
 - Report active rentals, vehicle usage and company performance.
-
-**Added:**
-
 - Approve requests to create contracts.
 - Prevent overlapping reservations and maintenance bookings.
 - Record inspections, mileage and damage.

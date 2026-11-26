@@ -12,9 +12,6 @@ Target users are cinemas, their customers, box-office staff and managers.
 - Store each movie's title, duration, genre and director.
 - Schedule screenings with a movie, room, date, time and ticket price.
 - Let customers buy tickets for a specific screening.
-
-**Added:**
-
 - Prevent overlapping screenings in a room, including cleaning time.
 - Give each room numbered seats.
 - Let customers view available seats and select them.
